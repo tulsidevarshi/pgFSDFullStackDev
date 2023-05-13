@@ -6,7 +6,7 @@ BankOfIndia: child: findrateofInterest()
 SBI: findrateofInterest()
 HDFC: findrateofInterest() */
 
-public class BankMain{
+public abstract class BankMain{
     public static void main(String[] args){
         System.out.println();
         BankOfIndia boi = new BankOfIndia(40000, 80000, 10);
