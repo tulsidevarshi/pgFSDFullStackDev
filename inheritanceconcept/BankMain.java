@@ -1,8 +1,8 @@
 package inheritanceconcept;
-
+import corejava.UserDefinedExc;
+import corejava.UnixColorCode;
 import java.lang.Math;
 import java.util.*;
-import java.util.stream.IntStream;
 import java.io.*;
 /*Bank class: Parent: findrateofInterest()
 BankOfIndia: child: findrateofInterest()
@@ -23,16 +23,37 @@ Case 2: Deposit Operation
 case 3: Withdraw Operation
 Case 4: exit 
 
+Bank : Withdrow : User defined Exception InsuffcintFundExeption; 
+more than his acc balance; 
+
+public void run(): 
+•	public void start():
+•	public void sleep(long miliseconds): 
+•	public int getPriority(): 
+•	public int setPriority(int priority): 
+•	public String getName(): 
+•	public void setName(String name): 
+•	wait()
+•	currentThread()
+•	NORM_PRIORITY
+•	MAX_PRIORITY
+•	MIN_
+Synchronzations: 
+
+Go through the Collection framework family: 
+
+yield() method should be tried
+
 */
 
 public class BankMain{
-    private static final String messageString = """
+    private static final String messageString = UnixColorCode.ANSI_GREEN+"""
         1 -> Create a new account
         2 -> Withdraw Money from your account
         3 -> Deposit Money to your account
         4 -> Check balance of your account
         5 -> Exit
-        """;
+        """+UnixColorCode.ANSI_RESET;
     private static Hdfc obj1;
     public static void main(String[] args) throws IOException  {
         System.out.println();
@@ -261,7 +282,7 @@ class Hdfc extends Bank{
     public static final Integer branchCode = 4807;
     private static final Integer savingsAccountPrefix = 324;
     protected static Integer nextAvaAccountNumber = 10000;
-    protected static List<AccountBalance> CustBalance = new ArrayList<>(Arrays.asList());
+    protected static List<AccountBalance> CustBalance = new ArrayList<AccountBalance>();
 
     public Hdfc(double principal, double amount ,double timePeriod){
         super(principal, amount, timePeriod, frequency, "Housing Development Finance Corporation Limited Bank");
@@ -327,13 +348,14 @@ class Hdfc extends Bank{
     protected boolean withdraw(long account_number, double amnt){
         for (AccountBalance accountBalance : CustBalance) {
             if ((accountBalance.accountNumber == account_number)){
-                if (accountBalance.accountBalance >= amnt){
+                try{
+                    UserDefinedExc.validateWihdrawl(accountBalance.accountBalance, amnt);
                     accountBalance.accountBalance -= amnt;
                     System.out.println(String.format("Amount left: %.5f for account number %d", accountBalance.accountBalance, account_number));
                     return true;
                 }
-                else{
-                    System.out.println(String.format("Insufficient balance in Account Number %d", account_number));
+                catch(Exception e){
+                    System.out.println(e);
                     return false;
                 }
             }
