@@ -1,0 +1,100 @@
+(base) devarshi_singh@Devarshis-Air pgFSDFullStackDev %  /usr/bin/env /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -XX:+ShowCodeDetai
+lsInExceptionMessages -cp /Users/devarshi_singh/Library/Application\ Support/Code/User/workspaceStorage/626b5011070d9ca8444c42cceaa3741a/redhat.java/jdt_ws/pgFS
+DFullStackDev_931371d1/bin SimplilearnProjectSubmitted.ArithematicCalculator 
+
+****************************************************************************************************
+
+
+1 -> Addition of two numbers
+2 -> Subtraction of two numbers
+3 -> Multiplication of two numbers
+4 -> Division of two numbers
+5 -> Get last ten operations summary
+6 -> Exit
+
+
+Please choose any number from above to perform corresponding action:  1
+
+Please input your first number to be kept at left of this binary operation: 2
+
+Please input your second number to be kept at right of this binary operation: 3
+
+Addition of two number: 5.0
+****************************************************************************************************
+
+
+1 -> Addition of two numbers
+2 -> Subtraction of two numbers
+3 -> Multiplication of two numbers
+4 -> Division of two numbers
+5 -> Get last ten operations summary
+6 -> Exit
+
+
+Please choose any number from above to perform corresponding action:  4
+
+Please input your first number to be kept at left of this binary operation: 5
+
+Please input your second number to be kept at right of this binary operation: 6
+
+Divide two number of two numbers: 0.8333333333333334
+****************************************************************************************************
+
+
+1 -> Addition of two numbers
+2 -> Subtraction of two numbers
+3 -> Multiplication of two numbers
+4 -> Division of two numbers
+5 -> Get last ten operations summary
+6 -> Exit
+
+
+Please choose any number from above to perform corresponding action:  4
+
+Please input your first number to be kept at left of this binary operation: 1
+
+Please input your second number to be kept at right of this binary operation: 2
+
+Divide two number of two numbers: 0.5
+****************************************************************************************************
+
+
+1 -> Addition of two numbers
+2 -> Subtraction of two numbers
+3 -> Multiplication of two numbers
+4 -> Division of two numbers
+5 -> Get last ten operations summary
+6 -> Exit
+
+
+Please choose any number from above to perform corresponding action:  4
+
+Please input your first number to be kept at left of this binary operation: 1
+
+Please input your second number to be kept at right of this binary operation: 0
+
+Exception: UserDefinedException.DivideByZero: Denominator can not be zero.
+****************************************************************************************************
+
+
+1 -> Addition of two numbers
+2 -> Subtraction of two numbers
+3 -> Multiplication of two numbers
+4 -> Division of two numbers
+5 -> Get last ten operations summary
+6 -> Exit
+
+
+Please choose any number from above to perform corresponding action:  5
+Operation: Addition Result: Addition on number 1: 2.0 and number 2:3.0
+Operation: Division Result: Division on number 1: 5.0 and number 2:6.0
+Operation: Division Result: Division on number 1: 1.0 and number 2:2.0
+****************************************************************************************************
+
+
+1 -> Addition of two numbers
+2 -> Subtraction of two numbers
+3 -> Multiplication of two numbers
+4 -> Division of two numbers
+5 -> Get last ten operations summary
+6 -> Exit
