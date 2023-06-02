@@ -1,0 +1,8 @@
+1> Have used access modifier accros the code.
+2> Have defined User Defined Exception to throw DivideByZeroError.
+3> Have taken user input.
+4> While taking user input, I have used BufferedReader instead of scanner as scanner class has issue with reading lines.
+5> Arithematic ArithematicCalculator lets you see last 10 calulations done on the machine.
+6> It uses a user defined Size Limited stack to depict the knowledge of Collection, Override and inheritance.
+
+DISCLAIMER  :RUNS BEST ON LINUX BASED System. Tested on MAC OS
