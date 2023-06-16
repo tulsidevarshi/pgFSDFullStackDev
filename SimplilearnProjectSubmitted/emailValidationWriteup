@@ -1,0 +1,5 @@
+1> Used regex to validate email.
+2> Take file input and then convert it as ArrayList
+3> Converted ArrayList is passed to email EmailAuthenticator.authenticateEmailsArray(emailArrayList);
+4> This code also uses UnixColorCode hence works best on max and unix based systems.
+5> This code should be kept inside of package named: SimplilearnProjectSubmitted.
